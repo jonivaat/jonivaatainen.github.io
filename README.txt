@@ -3,7 +3,7 @@ Webpage start
 Credits:
 	.html Templates:
 		HTML5 UP
-	Demo Images:
+	Images:
 		Unsplash (unsplash.com)
 
 	Icons:
