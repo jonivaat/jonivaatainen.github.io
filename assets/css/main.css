@@ -2631,10 +2631,11 @@ input, select, textarea {
 			.image.fit img {
 				width: 100%;
 			}
-
+		
 		.image.main {
 			display: block;
-			margin: 4rem 0;
+			/* margin updated from 4rem 0 -> 4rem 6rem */
+			margin: 4rem 6rem;
 			width: 100%;
 		}
 
@@ -2643,7 +2644,8 @@ input, select, textarea {
 			}
 
 			.image.main img {
-				width: 100%;
+				/* width updated from 100% -> 75% */
+				width: 75%;
 			}
 
 		@media screen and (max-width: 736px) {
