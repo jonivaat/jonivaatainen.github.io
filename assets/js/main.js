@@ -280,8 +280,8 @@ function toggleRow(nm)
 {
 	if( document.getElementById(nm).style.display=='none' ){
 		document.getElementById(nm).style.display = 'table-row'; // set to table-row instead of an empty string
-		document.getElementById(nm).style.lineHeight = '20px';
-		document.getElementById(nm).style.fontSize = '14px';
+	/*	document.getElementById(nm).style.lineHeight = '20px';
+		document.getElementById(nm).style.fontSize = '14px'; */
 	}else{
 		document.getElementById(nm).style.display = 'none';
 	}
