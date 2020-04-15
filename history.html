@@ -35,12 +35,17 @@
 						</ul>
 					</nav>
 
+				
+
+				
+
 				<!-- Main -->
 					<div id="main">
 						<!-- Post -->
+
 						<section class="post">
 								<h2>Alma Maters</h2>
-								<div class="table-wrapper">
+								<div id="table1" class="table-wrapper">
 									<table>
 										<thead>
 											<tr>
@@ -50,16 +55,24 @@
 											</tr>
 										</thead>
 										<tbody>
-											<tr>
+											<tr class="highlight" onClick="toggleOption('hidden_r1');">
+												
 												<td>Waseda University</td>
 												<td>Master of Engineering (Mech)</td>
 												<td>2018-2020 (Sept)</td>
+
 											</tr>
-											<tr>
+											<tr id="hidden_r1" style="display:none;">
+												<td><b>Description</b>: <i>Researching applied AI for Robotics, such as Robot Control, (Robot) State retrevial and Object Detection.</i></td>
+											</tr>
+											<tr class="highlight" onClick="toggleOption('hidden_r2');">
 												<td>Helsinki Metropolia University of Applied Sciences</td>
 												<td>Bachelor of Engineering (Mech)</td>
 												<td>2014-2018</td>
 											</tr>
+											<tr id="hidden_r2" style="display:none;">
+												<td><b>Description</b>: <i>Specialization course in Machine Automation.</i></td>
+											</tr>											
 											<tr>
 												<td>Helsinki School of Natural Sciences</td>
 												<td>High School Diploma</td>
@@ -72,7 +85,7 @@
 								</div>
 								
 								<h2>Work Experience</h2>
-								<div class="table-wrapper">
+								<div id="table2" class="table-wrapper">
 									<table>
 										<thead>
 											<tr>
@@ -82,31 +95,55 @@
 											</tr>
 										</thead>
 										<tbody>
-											<tr>
+											<tr class="highlight" onClick="toggleOption('hidden_r3');">
 												<td>Preferred Networks</td>
 												<td>Research Intern</td>
 												<td>August 2019 - September 2019</td>
 											</tr>
-											<tr>
+
+											<tr id="hidden_r3" style="display:none;">
+												<td><b>Description</b>: <i>Research about robot task progress estimation with view invariant embeddings. Research paper under review for IROS 2020.</i></td>
+											</tr>		
+
+											<tr class="highlight" onClick="toggleOption('hidden_r4');">
 												<td>ABB - Marine & Ports</td>
 												<td>R&D Automation Engineer</td>
 												<td>April 2018- August 2018</td>
 											</tr>
-											<tr>
+
+											<tr id="hidden_r4" style="display:none;">
+												<td><b>Description</b>: <i>Developed new control logic and device interfaces for the Remote-Control Systems -team.</i></td>
+											</tr>		
+
+											<tr class="highlight" onClick="toggleOption('hidden_r5');">
 												<td>Okmetic Oy</td>
 												<td>Project Engineer</td>
 												<td>January 2018 - March 2018</td>
 											</tr>
-											<tr>
+
+											<tr id="hidden_r5" style="display:none;">
+												<td><b>Description</b>: <i>Created process and quality control tools such as SPC and Ship-To-Control (STC) for the SOI-wafer process.</i></td>
+											</tr>		
+
+											<tr class="highlight" onClick="toggleOption('hidden_r6');">
 												<td>Okmetic Oy</td>
 												<td>Thesis Worker</td>
 												<td>September 2017 - December 2018</td>
 											</tr>
-											<tr>
+
+											<tr id="hidden_r6" style="display:none;">
+												<td><b>Description</b>: <i>Created Microsoft Excel-based Statistical Process Control (SPC) application for polishing process.</i></td>
+											</tr>		
+
+											<tr class="highlight" onClick="toggleOption('hidden_r7');">
 												<td>Okmetic Oy</td>
 												<td>Production Team Lead</td>
 												<td>May 2017 - August 2017</td>
 											</tr>
+
+											<tr id="hidden_r7" style="display:none;">
+												<td><b>Description</b>: <i>Managing resource distribution within my team, handling process problems occurring within the work shift and served as a medium between Management team and operators.</i></td>
+											</tr>	
 										</tbody>
 										<tfoot>
 										</tfoot>

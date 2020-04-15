@@ -154,6 +154,17 @@ input, select, textarea {
 		line-height: 2.375;
 	}
 
+	hl {
+		color: #212931;
+		border-bottom-color: rgba(33, 41, 49, 0.5);
+		}
+
+		hl:hover {
+			border-bottom-color: transparent;
+			color: #18bfef !important;
+		}
+	
+
 	a {
 		-moz-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 		-webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
@@ -3019,7 +3030,15 @@ input, select, textarea {
 			border: solid 1px;
 			border-left: 0;
 			border-right: 0;
+
 		}
+
+		/* Added for 20.4.15 */
+			table tbody tr.highlight:hover {
+				border-color: #7ba7d3;
+				background-color: #eeeeee !important;
+			}
+		/* Added end */
 
 		table td {
 			padding: 0.75rem 0.75rem;
@@ -4140,6 +4159,11 @@ input, select, textarea {
 		#footer table tbody tr {
 			border-color: #e2e2e2;
 		}
+		/* Added 20.4.15 */
+			#footer table tbody tr:hover {
+				border-color: #e2e2e2;
+			}
+		/* Add end*/
 
 			#footer table tbody tr:nth-child(2n + 1) {
 				background-color: rgba(220, 220, 220, 0.5);
