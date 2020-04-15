@@ -262,11 +262,10 @@ function toggleOption(thisselect)
 {
 	var selected = thisselect
 	var i;
-	var base_string = 'hidden_r';
 	var hidden_rows = document.querySelectorAll('*[id^="hidden_r"]');
 	for (i = 0; i < hidden_rows.length; i++) {
-		if(hidden_rows[i].style.display=='table-row' && hidden_rows[i]!=selected) {
-			hidden_rows[i].style.display = 'none';	
+		if(hidden_rows[i].style.display=='table-row' && hidden_rows[i].id != document.getElementById(selected).id) {
+			hidden_rows[i].style.display = 'none';
 		}
 	}
 	toggleRow(selected);
