@@ -2125,6 +2125,19 @@ input, select, textarea {
 			padding: 0;
 			white-space: nowrap;
 		}
+			/* added 20.4.16 */
+			.button.icon.solo.small {
+				position: absolute;
+				width: 2rem;
+				height: 2rem;
+				line-height: 2rem;
+				border-radius: 2rem;
+				text-indent: 2rem;
+				overflow: hidden;
+				padding: 0;
+				white-space: nowrap;
+			}
+			/* added end */
 
 			input[type="submit"].icon.solo:before,
 			input[type="reset"].icon.solo:before,
@@ -3035,6 +3048,7 @@ input, select, textarea {
 
 		/* Added for 20.4.15 */
 			table tbody tr.highlight:hover {
+				cursor: pointer;
 				border-color: #7ba7d3;
 				background-color: #eeeeee !important;
 			}

@@ -260,7 +260,7 @@
 /* Added 20.4.15 */
 function toggleOption(thisselect) 
 {
-	var selected = thisselect
+	var selected = thisselect;
 	var i;
 	var hidden_rows = document.querySelectorAll('*[id^="hidden_r"]');
 	/*var table1 = document.getElementById('table1').rows;
@@ -270,7 +270,7 @@ function toggleOption(thisselect)
 	
 	for (i = 0; i < hidden_rows.length; i++) {
 		if(hidden_rows[i].style.display=='table-row' && hidden_rows[i].id != document.getElementById(selected).id) {
-			hidden_rows[i].style.display = 'none';
+			hidden_rows[i].style.display = 'none';			
 		}
 	}
 	toggleRow(selected);
@@ -280,8 +280,6 @@ function toggleRow(nm)
 {
 	if( document.getElementById(nm).style.display=='none' ){
 		document.getElementById(nm).style.display = 'table-row'; // set to table-row instead of an empty string
-	/*	document.getElementById(nm).style.lineHeight = '20px';
-		document.getElementById(nm).style.fontSize = '14px'; */
 	}else{
 		document.getElementById(nm).style.display = 'none';
 	}
