@@ -262,7 +262,7 @@ function toggleOption(thisselect)
 {
 	var selected = thisselect;
 	var i;
-	var hidden_rows = document.querySelectorAll('*[id^="hidden_r"]');
+	var hidden_rows = document.querySelectorAll('*[id^="hidden_t"]');
 	/*var table1 = document.getElementById('table1').rows;
 	for (i = 0; i < 2; i++){ 
 		table1[i].height = '20px';
